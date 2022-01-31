@@ -23,7 +23,7 @@ public class ConsumingWebServiceApplication {
 			if (args.length > 0) {
 				country = args[0];
 			}
-			GetCountryResponse response = quoteClient.getCountry(country);
+			GetCountryResponse response = quoteClient.getCountryWithAuth(country);
 			System.err.println(response.getCountry().getCurrency());
 		};
 	}
